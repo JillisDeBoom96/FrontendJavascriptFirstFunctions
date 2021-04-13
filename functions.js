@@ -47,7 +47,12 @@ console.log(getGrades())
 // Schrijf een functie genaamd getDetails, die een object met daarin jouw eigen naam en achternaam teruggeeft.
 // ---- Verwachte uitkomst bij het aanroepen van de functie: { firstName: 'Jan', lastName: 'Janssen' }
 function getDetails(firstName, lastName){
-  return firstName + lastName;
+  return {
+   firstname: firstName ,
+    lastname: lastName
+  }
 }
 
+const details = getDetails("Jillis", "de Boom");
+console.log(details);
 
